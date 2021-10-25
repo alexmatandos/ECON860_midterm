@@ -3,8 +3,8 @@ import os
 from bs4 import BeautifulSoup
 import pandas
 
-if not os.path.exists("parsed_usernames"):
-	os.mkdir("parsed_usernames")
+if not os.path.exists("parsed_usernames_data"):
+	os.mkdir("parsed_usernames_data")
 
 if not os.path.exists("html_files_git_usernames"):
 	os.mkdir("html_files_git_usernames")
@@ -34,4 +34,4 @@ for username in usernames:
 
 	df = df.drop_duplicates()
 
-df.to_csv("parsed_usernames/git_usernames.csv")
+df.to_csv("parsed_usernames_data/git_usernames.csv")

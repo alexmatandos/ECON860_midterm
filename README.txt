@@ -1,6 +1,6 @@
 README
 
-(1) Execute 'git_usernames_request_parse.py' to request the html file from 'http://45.79.253.243/index.html' and parse through all the unique values for GitHub usernames contained inside. The 'git_usernames.csv' file will be generated inside the also generated folder 'parsed_usernames'.
+(1) Execute 'git_usernames_request_parse.py' to request the html file from 'http://45.79.253.243/index.html' and parse through all the unique values for GitHub usernames contained inside. The 'git_usernames.csv' file will be generated inside the also generated folder 'parsed_usernames_data'.
 
 (2) Execute 'git_users_info_request.py' to loop through each unique username contained in 'git_usernames.csv' and request the API files required for parsing the information. Creates the folder 'json_files_git_user_info' with the JSON files for each unique username. Disclaimer: to access GitHub's API you'll need to use your own personal API token and username.
 

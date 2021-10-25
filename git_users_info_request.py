@@ -4,7 +4,7 @@ import json
 import pandas
 import csv
 
-file = csv.reader(open("parsed_usernames/git_usernames.csv"), delimiter = ",")
+file = csv.reader(open("parsed_usernames_data/git_usernames.csv"), delimiter = ",")
 
 file = list(file)
 

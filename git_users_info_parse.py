@@ -3,8 +3,8 @@ import json
 import pandas
 import glob
 
-if not os.path.exists("git_users_info"):
-	os.mkdir("git_users_info")
+if not os.path.exists("git_users_info_data"):
+	os.mkdir("git_users_info_data")
 
 df = pandas.DataFrame()
 
@@ -35,4 +35,4 @@ for file in glob.glob("json_files_git_user_info/*.json"):
 		'Last Update': json_data['updated_at']
 		}, ignore_index = True)
 
-df.to_csv("git_users_info/git_users_info.csv")
+df.to_csv("git_users_info_data/git_users_info.csv")
