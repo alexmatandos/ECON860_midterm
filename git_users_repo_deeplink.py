@@ -42,9 +42,11 @@ for file in glob.glob("json_git_users_repo/*.json"):
 	
 	for i in range(len(json_data_1)):
 		repo = json_data_1[i]['full_name']
+		description = json_data_1[i]['description']
 		
 		df = df.append({
 			'Username/Repository': repo,
+			'Description': description
 			}, ignore_index = True)
 
 df.to_csv("git_users_repo_data/repo_dataset.csv")
